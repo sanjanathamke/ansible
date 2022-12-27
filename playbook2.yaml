@@ -1,0 +1,11 @@
+---
+  - name: Playbook
+    hosts: virtualmachines
+    become: yes
+    become_user: root
+    tasks:
+      - name: add list
+        user: name='{{item}}' state=present
+        with_items:
+                - sanjana
+                - Mansoor

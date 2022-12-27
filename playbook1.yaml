@@ -1,0 +1,10 @@
+---
+  - name: Playbook
+    hosts: virtualmachines
+    become: yes
+    become_user: root
+    tasks:
+      - name:
+        copy:
+          content: "welcome of sanju"
+          dest: /home/ubuntu/docs/index.html

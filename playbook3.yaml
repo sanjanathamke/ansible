@@ -1,0 +1,14 @@
+---
+  - name: Play3
+    hosts: virtualmachines
+    become: yes
+    become_user: root
+    tasks:
+      - name: Copy file with owner and permissions
+        ansible.builtin.copy:
+          src: /Users/sanjana.thamke/Documents/node/sanju.txt
+          dest:  /home/ubuntu/gitdemo/changes
+          mode: '0644'
+              
+        
+
