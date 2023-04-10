@@ -1,0 +1,10 @@
+---
+- name: Install nginx on webservers
+  hosts: all
+  become: true
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+      when: ansible_distribution == "Debian"

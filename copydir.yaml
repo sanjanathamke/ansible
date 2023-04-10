@@ -1,0 +1,14 @@
+---
+  - name: Play4
+    hosts: virtualmachines
+    become: yes
+    become_user: root
+    tasks:
+      - name: Copy dir with owner and permissions
+        copy:
+          src: /Users/sanjana.thamke/Ansible/
+          dest:  /home/ubuntu/gitdemo
+          
+              
+        
+

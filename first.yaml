@@ -1,0 +1,11 @@
+---
+  - name: Play3
+    hosts: localhost
+    tasks:
+      - name: "test"
+        ping:
+      - name: "test2 info"
+        find:
+          path: /Users/sanjana.thamke/Documents
+          file_type: file
+       

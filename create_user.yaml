@@ -1,6 +1,6 @@
 ---
   - name: Playbook
-    hosts: virtualmachines
+    hosts: all
     become: yes
     become_user: root
     tasks:
@@ -8,4 +8,4 @@
         user: name='{{item}}' state=present
         with_items:
                 - sanjana
-                - Mansoor
+                - Sayali

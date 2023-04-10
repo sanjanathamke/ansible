@@ -6,9 +6,9 @@
     tasks:
       - name: Copy file with owner and permissions
         ansible.builtin.copy:
-          src: /Users/sanjana.thamke/Documents/node/sanju.txt
-          dest:  /home/ubuntu/gitdemo/changes
-          mode: '0644'
+          src: /Users/sanjana.thamke/.ssh/gcp_prod
+          dest:  /home/ubuntu/
+          mode: '0777'
               
         
 
